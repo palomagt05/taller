@@ -29,6 +29,10 @@ class Taller extends CI_Controller {
 	}
 	public function paloma()
 	{
+		$this->load->view('Taller/paloma_view');
+	}
+	public function formulario()
+	{
 
 		$this->load->view('Commons/head_view');
 		$this->load->view('Commons/body_open_view');
