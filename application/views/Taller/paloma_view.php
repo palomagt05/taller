@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>paloma</title>
+  <title>AdminLTE 3 | Blank Page</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url('vendor/plugins/fontawesome-free/css/all.min.css') ?> ">
+  <link rel="stylesheet" href="<?php echo base_url('vendor/plugins/fontawesome-free/css/all.min.css')  ?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url('vendor/dist/css/adminlte.min.css')?>">
+  <link rel="stylesheet" href="<?php echo base_url('vendor/dist/css/adminlte.min.css') ?>">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -64,7 +64,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="<?php echo base_url('vendor/dist/img/user1-128x128.jpg')?>" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="<?php echo base_url('vendor/dist/img/user1-128x128.jpg') ?>" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -80,7 +80,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="<?php echo base_url('vendor/dist/img/user8-128x128.jpg')?>" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="<?php echo base_url('vendor/dist/img/user8-128x128.jpg') ?>" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -96,7 +96,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="<?php echo base_url('vendor/dist/img/user3-128x128.jpg')?>" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="<?php echo base_url('vendor/dist/img/user3-128x128.jpg') ?>" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -157,7 +157,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link">
-      <img src="<?php echo base_url('vendor/dist/img/AdminLTELogo.png')?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="<?php echo base_url('vendor/dist/img/AdminLTELogo.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -166,7 +166,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<?php echo base_url('vendor/dist/img/user2-160x160.jpg')?>" class="img-circle elevation-2" alt="User Image">
+          <img src="<?php echo base_url('vendor/dist/img/user2-160x160.jpg') ?>" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -690,7 +690,7 @@
               <li class="nav-item">
                 <a href="../examples/blank.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Blank Page</p>
+                  <p>Paloma Ameli</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -835,7 +835,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Paloma Gt</h1>
+            <h1>Paulo Daniel</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -896,12 +896,12 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="<?php echo base_url('vendor/plugins/jquery/jquery.min.js')?>"></script>
+<script src="<?php echo base_url('vendor/plugins/jquery/jquery.min.js') ?>"></script>
 <!-- Bootstrap 4 -->
-<script src="<?php echo base_url('vendor/plugins/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+<script src="<?php echo base_url('vendor/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url('vendor/dist/js/adminlte.min.js')?>"></script>
+<script src="<?php echo base_url('vendor/dist/js/adminlte.min.js') ?>"></script>
 <!-- AdminLTE for demo purposes -->
-<!--<script src="../../dist/js/demo.js"></script>-->
+<!-- <script src="../../dist/js/demo.js"></script> -->
 </body>
 </html>
