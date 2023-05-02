@@ -52,5 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'taller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
 $route['bienvenida']='Taller/primer_vista';
 $route['agregar']='Taller/agregar_taller';
+$route['formulario']    = 'Taller/formulario';
+$route['formulario/(:num)']  = 'Taller/formulario';
+$route['guardar']       = 'Taller/guardar_formulario';
+$route['borrar/(:any)'] = 'Taller/borrar_taller';

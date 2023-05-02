@@ -19,12 +19,16 @@
 
     <!-- Main content -->
     <section class="content">
-      <form action="" method="post">
-        <div class="card card-success">
+      <form action="<?php echo base_url('guardar')  ?>" method="post">
+        <div class="card card-success collapsed-card">
           <div class="card-header">
             <h4 class="card-title">
-              Ejemplo de formulario
+              <i class="fas fa-plus-circle"></i> 
+              Agregar taller
             </h4>
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i></button>
+            </div>
           </div>
           <div class="card-body">
 
@@ -65,6 +69,18 @@
                   <label for="">Correo de Contacto</label>
                   <input type="email" name="correo" id="correo" class="form-control" required="required"  >
                 </div>
+                <div class="form-group">
+                  <label for="">¿Trabajas?</label>
+                  <input type="radio" name="trabaja" id="trabaja_1" required="required"> Si
+                  <input type="radio" name="trabaja" id="trabaja_2" required="required" checked="checked"> No
+                </div>
+                <div class="form-group" id="div_trabaja" style="display:none;">
+                  <label for="">¿Dónde trabajas?</label>
+                  <input type="text" name="donde" id="donde" class="form-control" placeholder="Escriba aquí">
+                </div>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                  Ver ventana modal
+                </button>
               </div>
             </div>
 
@@ -78,7 +94,10 @@
         </div>
       </form>
 
-      <div class="card">
+      <div class="card card-success">
+        <div class="card-header">
+          <h2 class="card-title">Taller registrados</h2>
+        </div>
         <div class="card-body">
           <table class="table table-bordered table-hover table-striped" id="tabla">
             <thead>
@@ -86,59 +105,31 @@
                 <th>No.</th>
                 <th>Nombre de taller</th>
                 <th>Fecha</th>
+                <th>Opciones</th>
               </tr>
             </thead>
             <tbody class="text-center">
-              <tr>
-                <td>1</td>
-                <td>Taller 1</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Taller 2</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Taller 3</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Taller 4</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Taller 5</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Taller 6</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Taller 7</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Taller 8</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Taller 9</td>
-                <td>15-05-2023</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Taller 10</td>
-                <td>15-05-2023</td>
-              </tr>
+              <?php
+              if ($talleres!=false) { 
+                foreach ($talleres->result() as $taller) {
+                  ?>
+                  <tr>
+                    <td><?php echo $taller->id_taller ?></td>
+                    <td><?php echo $taller->nombre ?></td>
+                    <td><?php echo $taller->fecha ?></td>
+                    <td>
+                      <a href="" title="Editar taller" class="">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="<?php echo base_url('borrar/'.$taller->id_taller) ?>" title="Borrar taller" class="btn-borrar" data-name="<?php echo $taller->nombre ?>">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <?php
+                }
+              }
+              ?>
             </tbody>
             <tfoot></tfoot>
           </table>
